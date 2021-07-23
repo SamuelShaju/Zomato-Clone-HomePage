@@ -281,6 +281,7 @@ nav a:active{
 
 #hero_fourth {
     margin: 300px 5% 10px 5%;
+    height: auto;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -551,22 +552,34 @@ footer {
     }
 
     #hero_fourth_img1 {
+        height: 40vw;
+        width: 80vw;
+        left: -26vw;
         top: 10px;
     }
     #hero_fourth_img2 {
-        top: 170px;
+        height: 40vw;
+        width: 80vw;
+        left: -26vw;
+        top: 50vw;
     }
     #hero_fourth_img3 {
-        top: 340px;
+        height: 40vw;
+        width: 80vw;
+        left: -26vw;
+        top: 100vw;
     }
     #hero_fourth_img4 {
-        top: 510px;
+        height: 40vw;
+        width: 80vw;
+        left: -26vw;
+        top: 150vw;
     }
 
     /* Contact Division */
 
     #contact {
-        margin-top: 50px;
+        margin-top: 1350px;
         display: flex;
         flex-direction: column;
     }
