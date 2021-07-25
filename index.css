@@ -7,7 +7,6 @@
 body {
     font-family: "Merriweather";
     background-color: #b9d1fd;
-    overflow-x: hidden;    
     transition: all ease-out 0.3s;
 }
 
@@ -90,7 +89,7 @@ nav a:active{
     position: relative;
     left: 3vw;
     top: 150px;
-    width: 40vw;
+    width: 45vw;
 }
 
 
@@ -99,8 +98,6 @@ nav a:active{
     width: 100%;
     font-size: 2em;
     color: rgb(93, 93, 214);
-    display: flex;
-    flex-wrap: wrap;
 }
 
 #hero_first_anch {
@@ -131,22 +128,23 @@ nav a:active{
 
 #hero_first_graph {
     position: relative;
-    left: -150px;
+    right: 10vw;
 }
 
 #hero_first_img {
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.26);
     position: absolute;
     left: -500px;
-    height: 423px;
-    width: 564px;
+    height: 30vw;
+    width: 40vw;
 }
 
 #hero_first_bg1 {  
     position: absolute;
     top: -40px;
     left: -500px;
-    height: 600px;
+    height: 40vw;
+    width: 40vw;
     z-index: -1;
 }
 
@@ -154,8 +152,8 @@ nav a:active{
     position: absolute;
     top: -40px;
     left: -500px;
-    height: 600px;
-    width: 600px;
+    height: 40vw;
+    width: 40vw;
     z-index: -1;
 }
 
@@ -280,7 +278,7 @@ nav a:active{
     /* Fourth Hero Division */
 
 #hero_fourth {
-    margin: 300px 5% 10px 5%;
+    margin: 300px 0 10px 0;
     height: auto;
     display: flex;
     justify-content: space-around;
@@ -290,6 +288,9 @@ nav a:active{
 }
 
 #hero_fourth_heading {
+    text-align: center;
+    width: 90vw;
+    margin: 0 5vw 0 5vw;
     margin: 30px;
     color: darkblue;
     font-size: 4em;
@@ -298,13 +299,13 @@ nav a:active{
 
 #hero_fourth_cards {
     position: relative;
+    top: 50px;
     left: -150px;
     height: 500px;
     margin: 30px 10px 100px 10px;    
 }
 
-.hero_fourth_img {    
-    margin: 30px 10px 30px 10px;    
+.hero_fourth_img {  
     width: 300px;
     height: 150px;
     border-radius: 5px;
@@ -378,7 +379,7 @@ nav a:active{
 
 #contact_heading {
     color: darkblue;
-    margin: 0px 0px 0px 40%;
+    margin: 0px 10px 0px 0;
 }
 
 #email_input {
@@ -432,6 +433,9 @@ footer {
 
 
 @media (max-width: 1080px){
+    body {
+    overflow-x: hidden;
+    }
 
     /* First Hero Division */
 
@@ -450,21 +454,28 @@ footer {
         width: 85vw;
     }
 
+    #first_hero_bg1, #first_hero_bg2 {
+        display: none;
+    }
+
     #hero_first_img {
-        margin: 0 30vw 0 30vw;
-        top: 0;
+        margin: 0 0vw 0 10vw;
+        top: -150;
         left: 0;
+        height: 60vw;
+        width: 80vw;
     }
 
     #hero_first_text {
         top: -100px;
+        left: 5vw;
     }
 
     #hero_first_para {
         display: block;
         margin: 10px;
         top: 550px;
-        left: -20vw;
+        left: -25vw;
         width: 80vw;
     }
 
@@ -537,12 +548,17 @@ footer {
     }
 
     #hero_fourth_heading {
+        text-align: center;
+        font-size: 3em;
         margin: 5vw;
         width: 90vw;
     }
 
     .hero_fourth_img {
         animation-duration: 0s;
+        height: 50vw;
+        width: 80vw;
+        left: -18vw;
     }
 
     #hero_fourth_cards {
@@ -552,34 +568,23 @@ footer {
     }
 
     #hero_fourth_img1 {
-        height: 40vw;
-        width: 80vw;
-        left: -26vw;
-        top: 10px;
+
     }
+
     #hero_fourth_img2 {
-        height: 40vw;
-        width: 80vw;
-        left: -26vw;
-        top: 50vw;
+        top: 60vw;
     }
     #hero_fourth_img3 {
-        height: 40vw;
-        width: 80vw;
-        left: -26vw;
-        top: 100vw;
+        top: 120vw;
     }
     #hero_fourth_img4 {
-        height: 40vw;
-        width: 80vw;
-        left: -26vw;
-        top: 150vw;
+        top: 180vw;
     }
 
     /* Contact Division */
 
     #contact {
-        margin-top: 1350px;
+        margin-top: 1600px;
         display: flex;
         flex-direction: column;
     }
@@ -589,10 +594,9 @@ footer {
     }
 
     #contact_heading {
-        margin-top: 250px;
-        margin-left: 25%;
+        margin-top: 400px;
+        margin-bottom: 30px;
     }
-
 
     footer {
         margin: 0px;
