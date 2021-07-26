@@ -8,6 +8,7 @@ body {
     font-family: "Merriweather";
     background-color: #b9d1fd;
     transition: all ease-out 0.3s;
+    overflow-x: hidden;
 }
 
 ul {
@@ -23,6 +24,10 @@ button {
     border: none;
 }
 
+p {
+    text-align: center;
+}
+
 header {
     position: fixed;
     width: 100vw;
@@ -36,7 +41,6 @@ nav {
     position: relative;
     background-image: linear-gradient( to right, #2852ac 0%, #dd2476 100%);
     width: 100%;
-    inset: 0;
     height: 100%;
     padding: 8px 60px 10px 60px;
     z-index: 100;
@@ -112,6 +116,7 @@ nav a:active{
     color: white;
     position: absolute;
     top: 150px;
+    margin: 0 40% 0 40%;
 }
 
 #hero_first_anch:hover {
@@ -167,7 +172,7 @@ nav a:active{
 }
 
 #chef__video {
-    box-shadow: 18px 18px 0px rgb(130, 20, 220);
+    box-shadow: 18px 18px 10px rgb(130, 20, 220);
     margin: 10px 10px 10px 10px;
 }
 
@@ -197,6 +202,7 @@ nav a:active{
     color: rgb(0, 0, 92);
     align-self: center;
     transform: skewY(-10deg);
+    text-align: center;
 }
 
 #hero_third_cards {
@@ -279,7 +285,6 @@ nav a:active{
 
 #hero_fourth {
     margin: 300px 0 10px 0;
-    height: auto;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -301,7 +306,6 @@ nav a:active{
     position: relative;
     top: 50px;
     left: -150px;
-    height: 500px;
     margin: 30px 10px 100px 10px;    
 }
 
@@ -371,13 +375,14 @@ nav a:active{
 }
 
 #contact {
-    margin: 50px 0px 100px 0px;
+    margin: 550px 0px 100px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #contact_heading {
+    text-align: center;
     color: darkblue;
     margin: 0px 10px 0px 0;
 }
@@ -425,11 +430,20 @@ footer {
     align-items: center;
 }
 
-#footer_list {
+.footer_list {
     color: rgb(255, 255, 255);
     font-size: 1.1em;
     font-weight: 500;
 }
+
+#small_footer {
+    display: none;
+}
+
+
+
+
+
 
 
 @media (max-width: 1080px){
@@ -460,8 +474,8 @@ footer {
 
     #hero_first_img {
         margin: 0 0vw 0 10vw;
-        top: -150;
-        left: 0;
+        top: -100px;
+        left: 3vw;
         height: 60vw;
         width: 80vw;
     }
@@ -469,21 +483,27 @@ footer {
     #hero_first_text {
         top: -100px;
         left: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 
     #hero_first_para {
         display: block;
         margin: 10px;
-        top: 550px;
+        top: 600px;
         left: -25vw;
         width: 80vw;
     }
 
     #hero_first_anch {
         position: relative;
+        text-align: center;
         margin-top: 50px;
-        left: 10vw;
         top: 700px;
+        left: -5vw;
+        
     }
 
     /* Second Hero Division */
@@ -513,7 +533,7 @@ footer {
         background-image: none;
         border-radius: 10px 15px 10px 15px;
         margin: 400px 5% 300px 5%;
-        width: 90%;
+        width: 100vw;
         height: 600px;
         display: flex;
         flex-direction: column;
@@ -521,7 +541,10 @@ footer {
     }
 
     #hero_third_heading {
-        width: 400px;
+        width: 90vw;
+        font-size: 3em;
+        font-weight: 600;
+        margin: 10vw;
     }
 
     #hero_third_cards {
@@ -558,11 +581,14 @@ footer {
         animation-duration: 0s;
         height: 50vw;
         width: 80vw;
-        left: -18vw;
+        margin: 10vw;
+        left: 0;
+        right: 0;
     }
 
     #hero_fourth_cards {
         position: relative;
+        left: -50vw;
         display: flex;
         flex-direction: column;
     }
@@ -584,7 +610,7 @@ footer {
     /* Contact Division */
 
     #contact {
-        margin-top: 1600px;
+        margin-top: 200vw;
         display: flex;
         flex-direction: column;
     }
@@ -604,8 +630,79 @@ footer {
 
 }
 
-@media (min-width: 1200px){
 
+
+
+
+
+
+
+
+@media (max-width: 650px){
+    body {
+        overflow-x: hidden;
+    }
+    
+
+    #hero_first_text {
+        top: -300px;
+    }
+
+    #hero_first_anch {
+        top: 800px;
+    }
+
+
+    /* Second Hero Division */
+
+
+    #hero_second {
+        top: -200px;
+    }
+
+    #hero_second_para {
+        left: -80px;
+    }
+
+
+    /* Third Hero Division */
+
+
+    #hero_third {
+
+    }
+
+
+    /* Contact */
+
+
+    #contact {
+        top: 1500px;
+    }
+
+    #email_input {
+        width: 50vw;
+    }
+
+    #contact_heading {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90vw;
+    }
+
+    #large_footer {
+        display: none;
+    }
+
+    #small_footer {
+        padding: 50px;
+        display: block;
+        justify-content: space-around;
+    }
+
+    li {
+        margin: 10px;
+    }
 }
 
 
