@@ -525,6 +525,8 @@ footer {
 
     #chef__video {
         display: block;
+        top: -50px;
+        left: 3vw;
         /* box-shadow: 0px 0px 0px black; */
         width: 50vw;
         height: 25vw;
@@ -683,8 +685,7 @@ footer {
 
 
     #hero_second {
-        top: -200px;
-        left: -20vw;
+        top: -100px;
     }
 
     #hero_second_para {
@@ -692,8 +693,8 @@ footer {
     }
 
     #chef__video {
-        width: 60vw;
         position: relative;
+        box-shadow: 0px 0px 0px black;
         left: 0vw;
         margin: 0;
     }
@@ -745,6 +746,16 @@ footer {
 @media (max-width: 300px){
     #hero_first_text {
         top: -500px;
+    }
+
+    #hero_second {
+        left: -20vw;
+    }
+
+
+    #chef__video {
+        width: 50vw;
+        height: 25vw;
     }
 
 
