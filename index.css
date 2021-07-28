@@ -202,6 +202,7 @@ nav a:active{
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: space-around;
 }
 
 #hero_third_heading {
@@ -286,7 +287,7 @@ nav a:active{
     color: rgb(69, 26, 223);    
     font-weight: 500;
     width: 20%;
-    margin-left: 40%;
+    margin-left: 30%;
     transition: all ease-out 0.3s;
 
 }
@@ -546,7 +547,7 @@ footer {
     #hero_third {
         background-image: none;
         border-radius: 10px 15px 10px 15px;
-        margin: 400px 5% 300px 0%;
+        margin: 800px 5% 300px 0%;
         width: 100vw;
         height: 600px;
         display: flex;
@@ -686,6 +687,7 @@ footer {
 
     #hero_second {
         top: -100px;
+        left: -5vw;
     }
 
     #hero_second_para {
@@ -695,7 +697,7 @@ footer {
     #chef__video {
         position: relative;
         box-shadow: 0px 0px 0px black;
-        left: 0vw;
+        left: 5vw;
         margin: 0;
     }
 
@@ -758,6 +760,10 @@ footer {
         height: 25vw;
     }
 
+    #hero_third_heading {
+        top: 300px;
+
+    }
 
     .hero_third_card_img {
         width: 80vw;
